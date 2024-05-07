@@ -122,10 +122,16 @@
 		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Character/Player.h">
 			<Option target="ProjetQT"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Batiments.cpp">
+		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.cpp">
 			<Option target="ProjetQT"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Batiments.h">
+		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.h">
+			<Option target="ProjetQT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Tower.cpp">
+			<Option target="ProjetQT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Tower.h">
 			<Option target="ProjetQT"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.cpp">

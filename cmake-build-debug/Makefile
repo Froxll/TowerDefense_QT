@@ -190,29 +190,53 @@ Character/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Player.cpp.s
 .PHONY : Character/Player.cpp.s
 
-Constructions/Batiments.o: Constructions/Batiments.cpp.o
-.PHONY : Constructions/Batiments.o
+Constructions/Nexus.o: Constructions/Nexus.cpp.o
+.PHONY : Constructions/Nexus.o
 
 # target to build an object file
-Constructions/Batiments.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Batiments.cpp.o
-.PHONY : Constructions/Batiments.cpp.o
+Constructions/Nexus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o
+.PHONY : Constructions/Nexus.cpp.o
 
-Constructions/Batiments.i: Constructions/Batiments.cpp.i
-.PHONY : Constructions/Batiments.i
+Constructions/Nexus.i: Constructions/Nexus.cpp.i
+.PHONY : Constructions/Nexus.i
 
 # target to preprocess a source file
-Constructions/Batiments.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Batiments.cpp.i
-.PHONY : Constructions/Batiments.cpp.i
+Constructions/Nexus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.i
+.PHONY : Constructions/Nexus.cpp.i
 
-Constructions/Batiments.s: Constructions/Batiments.cpp.s
-.PHONY : Constructions/Batiments.s
+Constructions/Nexus.s: Constructions/Nexus.cpp.s
+.PHONY : Constructions/Nexus.s
 
 # target to generate assembly for a file
-Constructions/Batiments.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Batiments.cpp.s
-.PHONY : Constructions/Batiments.cpp.s
+Constructions/Nexus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.s
+.PHONY : Constructions/Nexus.cpp.s
+
+Constructions/Tower.o: Constructions/Tower.cpp.o
+.PHONY : Constructions/Tower.o
+
+# target to build an object file
+Constructions/Tower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o
+.PHONY : Constructions/Tower.cpp.o
+
+Constructions/Tower.i: Constructions/Tower.cpp.i
+.PHONY : Constructions/Tower.i
+
+# target to preprocess a source file
+Constructions/Tower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.i
+.PHONY : Constructions/Tower.cpp.i
+
+Constructions/Tower.s: Constructions/Tower.cpp.s
+.PHONY : Constructions/Tower.s
+
+# target to generate assembly for a file
+Constructions/Tower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.s
+.PHONY : Constructions/Tower.cpp.s
 
 Pages/Game.o: Pages/Game.cpp.o
 .PHONY : Pages/Game.o
@@ -422,9 +446,12 @@ help:
 	@echo "... Character/Player.o"
 	@echo "... Character/Player.i"
 	@echo "... Character/Player.s"
-	@echo "... Constructions/Batiments.o"
-	@echo "... Constructions/Batiments.i"
-	@echo "... Constructions/Batiments.s"
+	@echo "... Constructions/Nexus.o"
+	@echo "... Constructions/Nexus.i"
+	@echo "... Constructions/Nexus.s"
+	@echo "... Constructions/Tower.o"
+	@echo "... Constructions/Tower.i"
+	@echo "... Constructions/Tower.s"
 	@echo "... Pages/Game.o"
 	@echo "... Pages/Game.i"
 	@echo "... Pages/Game.s"
