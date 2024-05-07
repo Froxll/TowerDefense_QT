@@ -197,9 +197,15 @@
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Batiments.h",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.h",
 			"MU",
-			"G5JK6OJ4W7/moc_Batiments.cpp",
+			"G5JK6OJ4W7/moc_Nexus.cpp",
+			null
+		],
+		[
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Tower.h",
+			"MU",
+			"G5JK6OJ4W7/moc_Tower.cpp",
 			null
 		],
 		[
@@ -307,7 +313,12 @@
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Batiments.cpp",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Tower.cpp",
 			"MU",
 			null
 		],
