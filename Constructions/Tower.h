@@ -10,7 +10,7 @@ class Tower {
         int getLevel();
         int getDamage();
         int getRange();
-        void addLevel(int x);
+        void addLevel();
         void addDamage(int x);
 };
 
