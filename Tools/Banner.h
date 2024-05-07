@@ -6,7 +6,7 @@
 #include <QApplication>
 #include <QTimer>
 
-#include "Player.h"
+#include "../Character/Player.h"
 #include "Button.h"
 
 class Banner : public QWidget{

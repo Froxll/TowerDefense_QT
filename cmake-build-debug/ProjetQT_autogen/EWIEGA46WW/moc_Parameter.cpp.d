@@ -1,7 +1,7 @@
-/mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_Parameter.cpp: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/Parameter.h \
-  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug/ProjetQT_autogen/moc_predefs.h \
-  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/Button.h \
-  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/Slider.h \
+/mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_Parameter.cpp: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Parameter.h \
+  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/moc_predefs.h \
+  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Button.h \
+  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Slider.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

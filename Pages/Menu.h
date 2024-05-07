@@ -8,7 +8,7 @@
 
 #include "Game.h"
 #include "Parameter.h"
-#include "Button.h"
+#include "../Tools/Button.h"
 
 class Menu : public QMainWindow{
     Q_OBJECT

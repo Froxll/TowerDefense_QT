@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug"
+CMAKE_BINARY_DIR = "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug/CMakeFiles" "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -142,173 +142,149 @@ ProjetQT_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT_autogen.dir/build.make CMakeFiles/ProjetQT_autogen.dir/build
 .PHONY : ProjetQT_autogen/fast
 
-Banner.o: Banner.cpp.o
-.PHONY : Banner.o
+Character/Enemy.o: Character/Enemy.cpp.o
+.PHONY : Character/Enemy.o
 
 # target to build an object file
-Banner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Banner.cpp.o
-.PHONY : Banner.cpp.o
+Character/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o
+.PHONY : Character/Enemy.cpp.o
 
-Banner.i: Banner.cpp.i
-.PHONY : Banner.i
+Character/Enemy.i: Character/Enemy.cpp.i
+.PHONY : Character/Enemy.i
 
 # target to preprocess a source file
-Banner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Banner.cpp.i
-.PHONY : Banner.cpp.i
+Character/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.i
+.PHONY : Character/Enemy.cpp.i
 
-Banner.s: Banner.cpp.s
-.PHONY : Banner.s
+Character/Enemy.s: Character/Enemy.cpp.s
+.PHONY : Character/Enemy.s
 
 # target to generate assembly for a file
-Banner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Banner.cpp.s
-.PHONY : Banner.cpp.s
+Character/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.s
+.PHONY : Character/Enemy.cpp.s
 
-Button.o: Button.cpp.o
-.PHONY : Button.o
+Character/Player.o: Character/Player.cpp.o
+.PHONY : Character/Player.o
 
 # target to build an object file
-Button.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Button.cpp.o
-.PHONY : Button.cpp.o
+Character/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Player.cpp.o
+.PHONY : Character/Player.cpp.o
 
-Button.i: Button.cpp.i
-.PHONY : Button.i
+Character/Player.i: Character/Player.cpp.i
+.PHONY : Character/Player.i
 
 # target to preprocess a source file
-Button.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Button.cpp.i
-.PHONY : Button.cpp.i
+Character/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Player.cpp.i
+.PHONY : Character/Player.cpp.i
 
-Button.s: Button.cpp.s
-.PHONY : Button.s
+Character/Player.s: Character/Player.cpp.s
+.PHONY : Character/Player.s
 
 # target to generate assembly for a file
-Button.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Button.cpp.s
-.PHONY : Button.cpp.s
+Character/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Character/Player.cpp.s
+.PHONY : Character/Player.cpp.s
 
-Enemy.o: Enemy.cpp.o
-.PHONY : Enemy.o
+Constructions/Batiments.o: Constructions/Batiments.cpp.o
+.PHONY : Constructions/Batiments.o
 
 # target to build an object file
-Enemy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Enemy.cpp.o
-.PHONY : Enemy.cpp.o
+Constructions/Batiments.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Batiments.cpp.o
+.PHONY : Constructions/Batiments.cpp.o
 
-Enemy.i: Enemy.cpp.i
-.PHONY : Enemy.i
+Constructions/Batiments.i: Constructions/Batiments.cpp.i
+.PHONY : Constructions/Batiments.i
 
 # target to preprocess a source file
-Enemy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Enemy.cpp.i
-.PHONY : Enemy.cpp.i
+Constructions/Batiments.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Batiments.cpp.i
+.PHONY : Constructions/Batiments.cpp.i
 
-Enemy.s: Enemy.cpp.s
-.PHONY : Enemy.s
+Constructions/Batiments.s: Constructions/Batiments.cpp.s
+.PHONY : Constructions/Batiments.s
 
 # target to generate assembly for a file
-Enemy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Enemy.cpp.s
-.PHONY : Enemy.cpp.s
+Constructions/Batiments.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Constructions/Batiments.cpp.s
+.PHONY : Constructions/Batiments.cpp.s
 
-Game.o: Game.cpp.o
-.PHONY : Game.o
+Pages/Game.o: Pages/Game.cpp.o
+.PHONY : Pages/Game.o
 
 # target to build an object file
-Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Game.cpp.o
-.PHONY : Game.cpp.o
+Pages/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o
+.PHONY : Pages/Game.cpp.o
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+Pages/Game.i: Pages/Game.cpp.i
+.PHONY : Pages/Game.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+Pages/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Game.cpp.i
+.PHONY : Pages/Game.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+Pages/Game.s: Pages/Game.cpp.s
+.PHONY : Pages/Game.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+Pages/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Game.cpp.s
+.PHONY : Pages/Game.cpp.s
 
-Menu.o: Menu.cpp.o
-.PHONY : Menu.o
+Pages/Menu.o: Pages/Menu.cpp.o
+.PHONY : Pages/Menu.o
 
 # target to build an object file
-Menu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Menu.cpp.o
-.PHONY : Menu.cpp.o
+Pages/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o
+.PHONY : Pages/Menu.cpp.o
 
-Menu.i: Menu.cpp.i
-.PHONY : Menu.i
+Pages/Menu.i: Pages/Menu.cpp.i
+.PHONY : Pages/Menu.i
 
 # target to preprocess a source file
-Menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Menu.cpp.i
-.PHONY : Menu.cpp.i
+Pages/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.i
+.PHONY : Pages/Menu.cpp.i
 
-Menu.s: Menu.cpp.s
-.PHONY : Menu.s
+Pages/Menu.s: Pages/Menu.cpp.s
+.PHONY : Pages/Menu.s
 
 # target to generate assembly for a file
-Menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Menu.cpp.s
-.PHONY : Menu.cpp.s
+Pages/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.s
+.PHONY : Pages/Menu.cpp.s
 
-Parameter.o: Parameter.cpp.o
-.PHONY : Parameter.o
+Pages/Parameter.o: Pages/Parameter.cpp.o
+.PHONY : Pages/Parameter.o
 
 # target to build an object file
-Parameter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Parameter.cpp.o
-.PHONY : Parameter.cpp.o
+Pages/Parameter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o
+.PHONY : Pages/Parameter.cpp.o
 
-Parameter.i: Parameter.cpp.i
-.PHONY : Parameter.i
-
-# target to preprocess a source file
-Parameter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Parameter.cpp.i
-.PHONY : Parameter.cpp.i
-
-Parameter.s: Parameter.cpp.s
-.PHONY : Parameter.s
-
-# target to generate assembly for a file
-Parameter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Parameter.cpp.s
-.PHONY : Parameter.cpp.s
-
-Player.o: Player.cpp.o
-.PHONY : Player.o
-
-# target to build an object file
-Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Player.cpp.o
-.PHONY : Player.cpp.o
-
-Player.i: Player.cpp.i
-.PHONY : Player.i
+Pages/Parameter.i: Pages/Parameter.cpp.i
+.PHONY : Pages/Parameter.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+Pages/Parameter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.i
+.PHONY : Pages/Parameter.cpp.i
 
-Player.s: Player.cpp.s
-.PHONY : Player.s
+Pages/Parameter.s: Pages/Parameter.cpp.s
+.PHONY : Pages/Parameter.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+Pages/Parameter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.s
+.PHONY : Pages/Parameter.cpp.s
 
 ProjetQT_autogen/mocs_compilation.o: ProjetQT_autogen/mocs_compilation.cpp.o
 .PHONY : ProjetQT_autogen/mocs_compilation.o
@@ -334,29 +310,77 @@ ProjetQT_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.s
 .PHONY : ProjetQT_autogen/mocs_compilation.cpp.s
 
-Slider.o: Slider.cpp.o
-.PHONY : Slider.o
+Tools/Banner.o: Tools/Banner.cpp.o
+.PHONY : Tools/Banner.o
 
 # target to build an object file
-Slider.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Slider.cpp.o
-.PHONY : Slider.cpp.o
+Tools/Banner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o
+.PHONY : Tools/Banner.cpp.o
 
-Slider.i: Slider.cpp.i
-.PHONY : Slider.i
+Tools/Banner.i: Tools/Banner.cpp.i
+.PHONY : Tools/Banner.i
 
 # target to preprocess a source file
-Slider.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Slider.cpp.i
-.PHONY : Slider.cpp.i
+Tools/Banner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.i
+.PHONY : Tools/Banner.cpp.i
 
-Slider.s: Slider.cpp.s
-.PHONY : Slider.s
+Tools/Banner.s: Tools/Banner.cpp.s
+.PHONY : Tools/Banner.s
 
 # target to generate assembly for a file
-Slider.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Slider.cpp.s
-.PHONY : Slider.cpp.s
+Tools/Banner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.s
+.PHONY : Tools/Banner.cpp.s
+
+Tools/Button.o: Tools/Button.cpp.o
+.PHONY : Tools/Button.o
+
+# target to build an object file
+Tools/Button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o
+.PHONY : Tools/Button.cpp.o
+
+Tools/Button.i: Tools/Button.cpp.i
+.PHONY : Tools/Button.i
+
+# target to preprocess a source file
+Tools/Button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Button.cpp.i
+.PHONY : Tools/Button.cpp.i
+
+Tools/Button.s: Tools/Button.cpp.s
+.PHONY : Tools/Button.s
+
+# target to generate assembly for a file
+Tools/Button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Button.cpp.s
+.PHONY : Tools/Button.cpp.s
+
+Tools/Slider.o: Tools/Slider.cpp.o
+.PHONY : Tools/Slider.o
+
+# target to build an object file
+Tools/Slider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o
+.PHONY : Tools/Slider.cpp.o
+
+Tools/Slider.i: Tools/Slider.cpp.i
+.PHONY : Tools/Slider.i
+
+# target to preprocess a source file
+Tools/Slider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.i
+.PHONY : Tools/Slider.cpp.i
+
+Tools/Slider.s: Tools/Slider.cpp.s
+.PHONY : Tools/Slider.s
+
+# target to generate assembly for a file
+Tools/Slider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjetQT.dir/build.make CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.s
+.PHONY : Tools/Slider.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -392,33 +416,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ProjetQT_autogen"
 	@echo "... ProjetQT"
-	@echo "... Banner.o"
-	@echo "... Banner.i"
-	@echo "... Banner.s"
-	@echo "... Button.o"
-	@echo "... Button.i"
-	@echo "... Button.s"
-	@echo "... Enemy.o"
-	@echo "... Enemy.i"
-	@echo "... Enemy.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... Menu.o"
-	@echo "... Menu.i"
-	@echo "... Menu.s"
-	@echo "... Parameter.o"
-	@echo "... Parameter.i"
-	@echo "... Parameter.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
+	@echo "... Character/Enemy.o"
+	@echo "... Character/Enemy.i"
+	@echo "... Character/Enemy.s"
+	@echo "... Character/Player.o"
+	@echo "... Character/Player.i"
+	@echo "... Character/Player.s"
+	@echo "... Constructions/Batiments.o"
+	@echo "... Constructions/Batiments.i"
+	@echo "... Constructions/Batiments.s"
+	@echo "... Pages/Game.o"
+	@echo "... Pages/Game.i"
+	@echo "... Pages/Game.s"
+	@echo "... Pages/Menu.o"
+	@echo "... Pages/Menu.i"
+	@echo "... Pages/Menu.s"
+	@echo "... Pages/Parameter.o"
+	@echo "... Pages/Parameter.i"
+	@echo "... Pages/Parameter.s"
 	@echo "... ProjetQT_autogen/mocs_compilation.o"
 	@echo "... ProjetQT_autogen/mocs_compilation.i"
 	@echo "... ProjetQT_autogen/mocs_compilation.s"
-	@echo "... Slider.o"
-	@echo "... Slider.i"
-	@echo "... Slider.s"
+	@echo "... Tools/Banner.o"
+	@echo "... Tools/Banner.i"
+	@echo "... Tools/Banner.s"
+	@echo "... Tools/Button.o"
+	@echo "... Tools/Button.i"
+	@echo "... Tools/Button.s"
+	@echo "... Tools/Slider.o"
+	@echo "... Tools/Slider.i"
+	@echo "... Tools/Slider.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

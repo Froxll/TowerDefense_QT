@@ -1,5 +1,5 @@
-#include "Menu.h"
-#include "Parameter.h"
+#include "Pages/Menu.h"
+#include "Pages/Parameter.h"
 
 int main(int argc, char* argv[]) {
     QApplication app(argc,argv);

@@ -1,5 +1,5 @@
-C:\Windows\system32\wsl.exe --distribution Debian --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT' -B '/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug'"
+C:\Windows\system32\wsl.exe --distribution Debian --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT' -B '/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug'"
 -- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/TP/QT/ProjetQT/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug

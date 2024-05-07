@@ -8,7 +8,7 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 
-#include "Banner.h"
+#include "../Tools/Banner.h"
 
 class Game : public QMainWindow{
     Q_OBJECT

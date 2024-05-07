@@ -6,8 +6,8 @@
 #include <QMainWindow>
 #include <QVBoxLayout>
 
-#include "Slider.h"
-#include "Button.h"
+#include "../Tools/Slider.h"
+#include "../Tools/Button.h"
 
 
 class Parameter : public QMainWindow{
