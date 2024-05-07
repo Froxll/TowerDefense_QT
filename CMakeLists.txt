@@ -7,5 +7,5 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
-add_executable(ProjetQT main.cpp Pages/Game.cpp Pages/Menu.cpp Pages/Parameter.cpp Tools/Button.cpp Character/Enemy.cpp Tools/Slider.cpp Tools/Banner.cpp Character/Player.cpp Constructions/Tower.cpp Constructions/Nexus.cpp)
+add_executable(ProjetQT main.cpp Pages/Game.cpp Pages/Menu.cpp Pages/Parameter.cpp Tools/Button.cpp Character/Enemy.cpp Tools/Slider.cpp Tools/Banner.cpp Character/Player.cpp Constructions/Tower.cpp Constructions/Nexus.cpp Constructions/Tower.h)
 target_link_libraries(ProjetQT PRIVATE Qt6::Widgets)

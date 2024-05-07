@@ -339,6 +339,13 @@
 				10,
 				11
 			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				12
+			]
 		}
 	],
 	"sources" : 
@@ -415,6 +422,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "Constructions/Nexus.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Constructions/Tower.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
