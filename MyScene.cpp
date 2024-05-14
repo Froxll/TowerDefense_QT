@@ -38,4 +38,28 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent* event) {
     QGraphicsScene::mousePressEvent(event);
     QPointF clickPos = event->scenePos();
     addTower(clickPos.toPoint());
+    addGobelin();
+}
+
+void MyScene::addGobelin(){
+    QGraphicsPixmapItem* gobItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath()+"/../Image/marche_bas_1.png"));
+    int y = height(); // Récupération de la hauteur de la scène
+    qDebug() << y;
+    gobItem->setPos(100, y/2);
+    addItem(gobItem);
+
+    QTimer* timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, [=]() {
+        // Déplacement de l'image
+        gobItem->moveBy(10, 0);
+
+        // Vérification si la position en x dépasse 1000
+        if (gobItem->pos().x() > 200) {
+            // Arrêt du timer
+            timer->stop();
+        }
+    });
+
+    // Démarrage du timer
+    timer->start(500); // 500 ms = 0.5 secondes
 }

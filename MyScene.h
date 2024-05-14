@@ -22,6 +22,7 @@ class MyScene : public QGraphicsScene {
         void drawBackground(QPainter* painter, const QRectF &rect) override;
         void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
         void addTower(const QPoint& position);
+        void addGobelin();
     private slots:
         void update();
     private:
