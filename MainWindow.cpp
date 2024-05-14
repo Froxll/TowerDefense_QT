@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     this->setCentralWidget(mainView);
 
     this->setWindowTitle("Medieval Tower Defense Super Marvelous Enjoyable Game");
-    this->resize(900,600);
+    this->resize(1920,1080);
 
     //helpMenu = menuBar()->addMenu(tr("&Help"));
     //QAction* actionHelp = new QAction(tr("&About"), this);

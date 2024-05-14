@@ -5,7 +5,14 @@ MyScene::MyScene(QObject* parent) : QGraphicsScene(parent) {
     timer = new QTimer(this);
     //connect(timer, SIGNAL(timeout()), this, SLOT(update()));
     timer->start(30);
-    setSceneRect(0,0,900,600);
+    imagePath = QDir::currentPath()+"/../Image/TowerDefenseMap.png";
+    background.load(imagePath);
+    int newWidth = background.width();
+    int newHeight = background.height();
+    this->setSceneRect(0,0,newWidth,newHeight);
+   // QString mapPath = QDir::currentPath()+"/../Image/TowerDefenseMap.png";
+   // QPixmap map(mapPath);
+   // this->setSceneRect(0,0,map.width() * 0.7,map.height() * 0.7);
 }
 
 MyScene::~MyScene() {
@@ -18,12 +25,12 @@ void MyScene::update() {
 
 void MyScene::drawBackground(QPainter* painter, const QRectF &rect) {
     Q_UNUSED(rect);
-    QString imagePath = QDir::currentPath()+"/../Image/TowerDefenseMap.png";
-    QPixmap background(imagePath);
+    //QPixmap backgroundResize = background.scaled(newWidth,newHeight);
+
     if (background.isNull()) {
         qDebug() << "Erreur lors du chargement de l'image.";
     } else {
-        painter->drawPixmap(QPointF(0, 0), background);
+        painter->drawPixmap(QPointF(0, 0), background, sceneRect());
     }
 }
 

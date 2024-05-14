@@ -27,6 +27,8 @@ class MyScene : public QGraphicsScene {
     private:
         QTimer* timer;
         QPixmap mapBackground;
+        QString imagePath;
+        QPixmap background;
     public:
         MyScene(QObject* parent = nullptr);
         virtual ~MyScene();

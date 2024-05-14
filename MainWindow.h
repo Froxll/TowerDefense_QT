@@ -10,8 +10,8 @@
 #include <QMouseEvent>
 #include <QVector>
 
-#include "MyScene.h"
 #include "MyView.h"
+#include "MyScene.h"
 #include "Constructions/Tower.h"
 
 class MainWindow : public QMainWindow {
