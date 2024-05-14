@@ -1,10 +1,10 @@
-#include "Pages/Menu.h"
-#include "Pages/Parameter.h"
+#include <QApplication>
+#include "MainWindow.h"
 
 int main(int argc, char* argv[]) {
-    QApplication app(argc,argv);
+    QApplication app(argc, argv);
 
-    Menu menu;
+    MainWindow menu;
     menu.show();
 
     return app.exec();

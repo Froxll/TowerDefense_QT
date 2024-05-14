@@ -209,21 +209,21 @@
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.h",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MainWindow.h",
 			"MU",
-			"5G3D2AHKMG/moc_Game.cpp",
+			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.h",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyScene.h",
 			"MU",
-			"5G3D2AHKMG/moc_Menu.cpp",
+			"EWIEGA46WW/moc_MyScene.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.h",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyView.h",
 			"MU",
-			"5G3D2AHKMG/moc_Parameter.cpp",
+			"EWIEGA46WW/moc_MyView.cpp",
 			null
 		],
 		[
@@ -323,17 +323,17 @@
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.cpp",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MainWindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.cpp",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyScene.cpp",
 			"MU",
 			null
 		],
 		[
-			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.cpp",
+			"/mnt/c/Users/ISEN/OneDrive - yncr\u00e9a/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyView.cpp",
 			"MU",
 			null
 		],

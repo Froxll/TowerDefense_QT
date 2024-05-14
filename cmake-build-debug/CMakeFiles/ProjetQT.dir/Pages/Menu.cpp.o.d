@@ -401,11 +401,11 @@ CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/../Banner.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/../Tools/Banner.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/../Player.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/../Tools/../Character/Player.h \
  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/../Tools/Button.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \

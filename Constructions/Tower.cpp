@@ -1,5 +1,12 @@
 #include "Tower.h"
 
+Tower::Tower(){
+    level = 1;
+    damage = 60;
+    range = 30;
+    imagePath = QDir::currentPath()+"/../Image/tour.png";
+}
+
 int Tower::getLevel() {
     return level;
 }
@@ -18,4 +25,8 @@ void Tower::addDamage(int x) {
 
 void Tower::addLevel() {
     level++;
+}
+
+QString Tower::getImagePath() const {
+    return imagePath;
 }

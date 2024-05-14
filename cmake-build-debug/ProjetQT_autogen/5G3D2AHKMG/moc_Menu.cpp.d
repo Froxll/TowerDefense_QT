@@ -1,9 +1,9 @@
 /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/moc_Menu.cpp: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.h \
   /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/moc_predefs.h \
-  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Banner.h \
+  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Character/Player.h \
   /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.h \
   /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.h \
-  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Player.h \
+  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Banner.h \
   /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Button.h \
   /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Slider.h \
   /usr/include/alloca.h \

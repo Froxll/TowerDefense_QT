@@ -1,7 +1,7 @@
 CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o: \
  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_Banner.cpp \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MainWindow.cpp \
  /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -194,9 +194,9 @@ CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../Banner.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../MainWindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -256,6 +256,7 @@ CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
@@ -372,30 +373,114 @@ CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../MyScene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+ /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
+ /usr/include/c++/12/bits/fs_path.h /usr/include/c++/12/locale \
+ /usr/include/c++/12/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/12/bits/codecvt.h \
+ /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/12/bits/locale_conv.h /usr/include/c++/12/iomanip \
+ /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/codecvt \
+ /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../Player.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../Tools/Button.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../Constructions/Tower.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../MyView.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QResizeEvent \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MyScene.cpp \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../MyScene.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MyView.cpp \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/../../../MyView.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/moc_Banner.cpp \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/../../../Tools/Banner.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/../../../Tools/../Character/Player.h \
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/../../../Tools/Button.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
@@ -405,33 +490,12 @@ CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/moc_Game.cpp \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/Game.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/../Banner.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/moc_Menu.cpp \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/Menu.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/Game.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/Parameter.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/../Tools/Slider.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/../Tools/Button.h \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/moc_Parameter.cpp \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/5G3D2AHKMG/../../../Pages/Parameter.h \
  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/moc_Button.cpp \
  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/../../../Tools/Button.h \
  /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/moc_Slider.cpp \
- /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/../../../Tools/Slider.h
+ /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/../../../Tools/Slider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h

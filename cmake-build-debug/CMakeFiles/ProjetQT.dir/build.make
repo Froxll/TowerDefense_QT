@@ -97,52 +97,10 @@ CMakeFiles/ProjetQT.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/main.cpp" -o CMakeFiles/ProjetQT.dir/main.cpp.s
 
-CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
-CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.cpp
-CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o -MF CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o.d -o CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.cpp"
-
-CMakeFiles/ProjetQT.dir/Pages/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetQT.dir/Pages/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.cpp" > CMakeFiles/ProjetQT.dir/Pages/Game.cpp.i
-
-CMakeFiles/ProjetQT.dir/Pages/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/Pages/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Game.cpp" -o CMakeFiles/ProjetQT.dir/Pages/Game.cpp.s
-
-CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
-CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.cpp
-CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o -MF CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o.d -o CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.cpp"
-
-CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.cpp" > CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.i
-
-CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Menu.cpp" -o CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.s
-
-CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
-CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.cpp
-CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o -MF CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o.d -o CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.cpp"
-
-CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.cpp" > CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.i
-
-CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Pages/Parameter.cpp" -o CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.s
-
 CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Button.cpp
 CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o -MF CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o.d -o CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Button.cpp"
 
 CMakeFiles/ProjetQT.dir/Tools/Button.cpp.i: cmake_force
@@ -156,7 +114,7 @@ CMakeFiles/ProjetQT.dir/Tools/Button.cpp.s: cmake_force
 CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Character/Enemy.cpp
 CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o -MF CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o.d -o CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Character/Enemy.cpp"
 
 CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.i: cmake_force
@@ -170,7 +128,7 @@ CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.s: cmake_force
 CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Slider.cpp
 CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o -MF CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o.d -o CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Slider.cpp"
 
 CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.i: cmake_force
@@ -184,7 +142,7 @@ CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.s: cmake_force
 CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Banner.cpp
 CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o -MF CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o.d -o CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Tools/Banner.cpp"
 
 CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.i: cmake_force
@@ -198,7 +156,7 @@ CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.s: cmake_force
 CMakeFiles/ProjetQT.dir/Character/Player.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Character/Player.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Character/Player.cpp
 CMakeFiles/ProjetQT.dir/Character/Player.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjetQT.dir/Character/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjetQT.dir/Character/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Character/Player.cpp.o -MF CMakeFiles/ProjetQT.dir/Character/Player.cpp.o.d -o CMakeFiles/ProjetQT.dir/Character/Player.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Character/Player.cpp"
 
 CMakeFiles/ProjetQT.dir/Character/Player.cpp.i: cmake_force
@@ -212,7 +170,7 @@ CMakeFiles/ProjetQT.dir/Character/Player.cpp.s: cmake_force
 CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Tower.cpp
 CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o -MF CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o.d -o CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Tower.cpp"
 
 CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.i: cmake_force
@@ -226,7 +184,7 @@ CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.s: cmake_force
 CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
 CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.cpp
 CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o -MF CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o.d -o CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.cpp"
 
 CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.i: cmake_force
@@ -237,29 +195,68 @@ CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/Constructions/Nexus.cpp" -o CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.s
 
+CMakeFiles/ProjetQT.dir/MainWindow.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
+CMakeFiles/ProjetQT.dir/MainWindow.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MainWindow.cpp
+CMakeFiles/ProjetQT.dir/MainWindow.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjetQT.dir/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/MainWindow.cpp.o -MF CMakeFiles/ProjetQT.dir/MainWindow.cpp.o.d -o CMakeFiles/ProjetQT.dir/MainWindow.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MainWindow.cpp"
+
+CMakeFiles/ProjetQT.dir/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetQT.dir/MainWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MainWindow.cpp" > CMakeFiles/ProjetQT.dir/MainWindow.cpp.i
+
+CMakeFiles/ProjetQT.dir/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/MainWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MainWindow.cpp" -o CMakeFiles/ProjetQT.dir/MainWindow.cpp.s
+
+CMakeFiles/ProjetQT.dir/MyScene.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
+CMakeFiles/ProjetQT.dir/MyScene.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyScene.cpp
+CMakeFiles/ProjetQT.dir/MyScene.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjetQT.dir/MyScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/MyScene.cpp.o -MF CMakeFiles/ProjetQT.dir/MyScene.cpp.o.d -o CMakeFiles/ProjetQT.dir/MyScene.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyScene.cpp"
+
+CMakeFiles/ProjetQT.dir/MyScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetQT.dir/MyScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyScene.cpp" > CMakeFiles/ProjetQT.dir/MyScene.cpp.i
+
+CMakeFiles/ProjetQT.dir/MyScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/MyScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyScene.cpp" -o CMakeFiles/ProjetQT.dir/MyScene.cpp.s
+
+CMakeFiles/ProjetQT.dir/MyView.cpp.o: CMakeFiles/ProjetQT.dir/flags.make
+CMakeFiles/ProjetQT.dir/MyView.cpp.o: /mnt/c/Users/ISEN/OneDrive\ -\ yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyView.cpp
+CMakeFiles/ProjetQT.dir/MyView.cpp.o: CMakeFiles/ProjetQT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjetQT.dir/MyView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetQT.dir/MyView.cpp.o -MF CMakeFiles/ProjetQT.dir/MyView.cpp.o.d -o CMakeFiles/ProjetQT.dir/MyView.cpp.o -c "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyView.cpp"
+
+CMakeFiles/ProjetQT.dir/MyView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetQT.dir/MyView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyView.cpp" > CMakeFiles/ProjetQT.dir/MyView.cpp.i
+
+CMakeFiles/ProjetQT.dir/MyView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetQT.dir/MyView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ISEN/OneDrive - yncréa/Documents/Cours/A2/CPP/Projet/TowerDefense_QT/MyView.cpp" -o CMakeFiles/ProjetQT.dir/MyView.cpp.s
+
 # Object files for target ProjetQT
 ProjetQT_OBJECTS = \
 "CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/ProjetQT.dir/main.cpp.o" \
-"CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o" \
-"CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o" \
-"CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o" \
 "CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o" \
 "CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o" \
 "CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o" \
 "CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o" \
 "CMakeFiles/ProjetQT.dir/Character/Player.cpp.o" \
 "CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o" \
-"CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o"
+"CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o" \
+"CMakeFiles/ProjetQT.dir/MainWindow.cpp.o" \
+"CMakeFiles/ProjetQT.dir/MyScene.cpp.o" \
+"CMakeFiles/ProjetQT.dir/MyView.cpp.o"
 
 # External object files for target ProjetQT
 ProjetQT_EXTERNAL_OBJECTS =
 
 ProjetQT: CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/main.cpp.o
-ProjetQT: CMakeFiles/ProjetQT.dir/Pages/Game.cpp.o
-ProjetQT: CMakeFiles/ProjetQT.dir/Pages/Menu.cpp.o
-ProjetQT: CMakeFiles/ProjetQT.dir/Pages/Parameter.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/Tools/Button.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/Tools/Slider.cpp.o
@@ -267,6 +264,9 @@ ProjetQT: CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/Character/Player.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/Constructions/Nexus.cpp.o
+ProjetQT: CMakeFiles/ProjetQT.dir/MainWindow.cpp.o
+ProjetQT: CMakeFiles/ProjetQT.dir/MyScene.cpp.o
+ProjetQT: CMakeFiles/ProjetQT.dir/MyView.cpp.o
 ProjetQT: CMakeFiles/ProjetQT.dir/build.make
 ProjetQT: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 ProjetQT: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
