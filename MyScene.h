@@ -3,6 +3,8 @@
 
 #include <QGraphicsScene>
 #include <QApplication>
+#include <deque>
+#include <vector>
 //include Map
 #include <QGraphicsPixmapItem>
 #include <QPixmap>
@@ -16,23 +18,30 @@
 #include <QMouseEvent>
 #include <QGraphicsSceneMouseEvent>
 
+using namespace std;
+
 class MyScene : public QGraphicsScene {
     Q_OBJECT
     protected:
-        void drawBackground(QPainter* painter, const QRectF &rect) override;
         void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
         void addTower(const QPoint& position);
-        void addGobelin();
-    private slots:
-        void update();
+        void drawBackground(QPainter* painter, const QRectF &rect) override;
+        void addGobelinGauche();
+        void addGobelinHaut();
+        void addGobelinBas();
     private:
         QTimer* timer;
         QPixmap mapBackground;
         QString imagePath;
         QPixmap background;
+        deque<function<void()>> enemy_queue;
+        void addEnemies(int waveNumber,int nb_ennemy);
+        void processEnemyQueue(int waveNumber);
+        vector<QGraphicsPixmapItem*> list_of_enemy;
     public:
-        MyScene(QObject* parent = nullptr);
+        MyScene(const QSize& size, QObject* parent = nullptr);
         virtual ~MyScene();
+        void launchWave(int waveNumber);
 };
 
 
