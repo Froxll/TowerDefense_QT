@@ -8,7 +8,6 @@ MyScene::MyScene(const QSize& size, QObject* parent) : QGraphicsScene(parent) {
     imagePath = QDir::currentPath()+"/../Image/TowerDefenseMap.png";
     background.load(imagePath);
     setSceneRect(0, 0, background.width(), background.height());
-    qDebug() << "Taile de la scène : " << sceneRect().size();
 }
 
 MyScene::~MyScene() {
@@ -22,6 +21,10 @@ void MyScene::drawBackground(QPainter* painter, const QRectF &rect) {
     } else {
         painter->drawPixmap(QPointF(0, 0), background, sceneRect());
     }
+}
+
+void MyScene::isPressed() {
+    bouttonPressed = true;
 }
 
 void MyScene::addTower(QPoint position) {
@@ -44,28 +47,22 @@ void MyScene::addTower(QPoint position) {
 
         if(!(list_of_tower.empty())){
             for(Tower* t : list_of_tower){
-                qDebug() << "TowerList x : " << t->getPosition().x();
-                qDebug() << "NewTower x : " << position.x();
-                qDebug() << "TowerList y : " << t->getPosition().y();
-                qDebug() << "NewTower y : " << position.y();
-                qreal distance = ::sqrt(::pow(position.x()- t->getPosition().x() ,2) + ::pow(position.y() - t->getPosition().y(),2));
-                if(distance <= rangeDiameter){
+                qreal distance = ::sqrt(::pow(position.x()- t->x() ,2) + ::pow(position.y() - t->y(),2));
+                if(distance <= 150){
                     addTower = false;
                     qDebug() << "Click Refusé";
                 }
             }
         }
         if(addTower == true || list_of_tower.empty()){
-            QGraphicsPixmapItem* towerItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath()+"/../Image/tour.png"));
-            towerItem->setPos(position);
-            addItem(towerItem);
-
             Tower* newTower = new Tower();
-            newTower->setPosition(position);
+            newTower->moveBy(position.x(), position.y());
+
+            addItem(newTower);
 
             //Calcul des coordonnées pour centrer la portée autour de la tour
-            qreal rangeX = position.x() - newTower->getRange() + towerItem->boundingRect().width() / 2;
-            qreal rangeY = position.y() - newTower->getRange() + towerItem->boundingRect().height() / 2;
+            qreal rangeX = position.x() - newTower->getRange() + newTower->boundingRect().width() / 2;
+            qreal rangeY = position.y() - newTower->getRange() + newTower->boundingRect().height() / 2;
 
             //Affichage de la range de la tour
             QGraphicsEllipseItem* rangeItem = new QGraphicsEllipseItem(QRectF(rangeX, rangeY, rangeDiameter, rangeDiameter));
@@ -80,13 +77,15 @@ void MyScene::addTower(QPoint position) {
 }
 
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent* event) {
-    static int time = 1;
-    QGraphicsScene::mousePressEvent(event);
-    QPointF sizeTower(28.0,86.0);
-    QPointF clickPos = event->scenePos() - sizeTower;
-    addTower(clickPos.toPoint());
-    qDebug() << "Click détecté" << time;
-    time++;
+    if(bouttonPressed == true){
+        static int time = 1;
+        QGraphicsScene::mousePressEvent(event);
+        QPointF sizeTower(28.0,86.0);
+        QPointF clickPos = event->scenePos() - sizeTower;
+        addTower(clickPos.toPoint());
+        qDebug() << "Click détecté" << time;
+        time++;
+    }
 }
 
 void MyScene::addGobelinGauche(){
@@ -175,6 +174,7 @@ void MyScene::addGobelinHaut(){
                                 gobItem->moveBy(10, 0);
                                 if (gobItem->pos().x() > width()) {
                                     timer4->stop();
+
                                     this->removeItem(gobItem);
                                     auto gobelin = find(list_of_enemy.begin(), list_of_enemy.end(), gobItem);
                                     if (gobelin != list_of_enemy.end()) {
@@ -238,6 +238,7 @@ void MyScene::addGobelinBas(){
 
     timer1->start(100); // 0.1s
 }
+
 void MyScene::launchWave(int waveNumber) {
     int nb_ennemy = waveNumber * 3;
     qDebug() << "La difficulté (waveNumber) est la suivante : " << waveNumber;

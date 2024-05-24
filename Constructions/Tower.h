@@ -4,22 +4,23 @@
 #include <QString>
 #include <QDir>
 #include <QPoint>
+#include <QObject>
+#include <QGraphicsPixmapItem>
 
-class Tower {
+class Tower :  public QGraphicsPixmapItem, public QObject{
     private:
-        QPoint position;
+        QPixmap towerItem;
         int level;
         int damage;
         int range;
     public:
-        Tower();
-        QPoint getPosition();
+        Tower(int level = 1, int damage = 60, int range = 150, QPixmap towerItem = QPixmap(QDir::currentPath()+"/../Image/tour.png"));
+        QPixmap getItem();
         int getLevel();
         int getDamage();
         int getRange();
         void addLevel();
         void addDamage(int x);
-        void setPosition(QPoint &pos);
 
 };
 
