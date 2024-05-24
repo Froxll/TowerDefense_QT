@@ -1,9 +1,11 @@
 #include "Tower.h"
 
-Tower::Tower(){
-    level = 1;
-    damage = 60;
-    range = 150;
+Tower::Tower(int level, int damage, int range, QPixmap towerItem){
+    this->level = level;
+    this->damage = damage;
+    this->range = range;
+    this->towerItem = towerItem;
+    setPixmap(towerItem);
 }
 
 int Tower::getLevel() {
@@ -18,10 +20,6 @@ int Tower::getRange() {
     return range;
 }
 
-QPoint Tower::getPosition() {
-    return position;
-}
-
 void Tower::addDamage(int x) {
     damage = damage + x;
 }
@@ -30,6 +28,6 @@ void Tower::addLevel() {
     level++;
 }
 
-void Tower::setPosition(QPoint &pos) {
-    position = pos;
+QPixmap Tower::getItem(){
+    return towerItem;
 }

@@ -17,7 +17,6 @@
 #include "Constructions/Tower.h"
 #include <QMouseEvent>
 #include <QGraphicsSceneMouseEvent>
-//include Enemy
 #include "Character/Enemy.h"
 
 using namespace std;
@@ -37,14 +36,16 @@ class MyScene : public QGraphicsScene {
         QString imagePath;
         QPixmap background;
         deque<function<void()>> enemy_queue;
+        vector<Tower*> list_of_tower;
+        vector<Enemy*> list_of_enemy;
+        bool bouttonPressed = false;
         void addEnemies(int waveNumber,int nb_ennemy);
         void processEnemyQueue(int waveNumber);
-        std::vector<Tower*> list_of_tower;
-        vector<Enemy*> list_of_enemy;
     public:
         MyScene(const QSize& size, QObject* parent = nullptr);
         virtual ~MyScene();
         void launchWave(int waveNumber);
+        void isPressed();
 };
 
 

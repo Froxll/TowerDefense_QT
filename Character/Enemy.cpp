@@ -1,5 +1,18 @@
 #include "Enemy.h"
 
+Enemy::Enemy(QPixmap Gob, float newHp, float newDmg, int newGold, int newLvl){
+    this->img = Gob;
+    this->hp = newHp;
+    this->damage = newDmg;
+    this->level = newLvl;
+    this->gold = newGold;
+    setPixmap(img);
+}
+
+Enemy::~Enemy(){
+
+}
+
 int Enemy::getHP() {
     return hp;
 }
