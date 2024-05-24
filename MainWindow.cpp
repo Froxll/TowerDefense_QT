@@ -27,6 +27,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     QAction* actionHelp = new QAction(tr("&About"), this);
     connect(actionHelp, SIGNAL(triggered()), this, SLOT(slot_aboutMenu()));
     helpMenu->addAction(actionHelp);
+
+
+    QTimer::singleShot(5, this, [=]() {
+        QKeyEvent *event = new QKeyEvent(QEvent::KeyPress, Qt::Key_E, Qt::NoModifier);
+        QApplication::postEvent(this, event);
+    });
 }
 
 MainWindow::~MainWindow(){

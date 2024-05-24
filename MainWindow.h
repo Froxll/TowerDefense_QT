@@ -10,6 +10,8 @@
 #include <QMouseEvent>
 #include <QVector>
 #include <QVBoxLayout>
+#include <QTimer>
+#include <QApplication>
 
 #include "Character/Player.h"
 #include "MyView.h"

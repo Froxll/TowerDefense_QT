@@ -24,7 +24,7 @@ void MyScene::drawBackground(QPainter* painter, const QRectF &rect) {
     }
 }
 
-void MyScene::addTower(const QPoint& position) {
+void MyScene::addTower(QPoint position) {
     if((position.y() > 100 && position.y() < 200 && position.x() > 0 && position.x() < 800)
     ||(position.y() > 300 && position.y() < 400 && position.x() > 0 && position.x() < 700)
     ||(position.y() > 300 && position.y() < 600 && position.x() > 600 && position.x() < 700)
@@ -37,22 +37,60 @@ void MyScene::addTower(const QPoint& position) {
     ||(position.y() > 300 && position.y() < 400 && position.x() > 1100 && position.x() < 1500)
     ||(position.y() > 400 && position.y() < 700 && position.x() > 1500 && position.x() < 1600)
     ||(position.y() > 500 && position.y() < 600 && position.x() > 1600 && position.x() < 2000)){
-        QGraphicsPixmapItem* towerItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath()+"/../Image/tour.png"));
-        towerItem->setPos(position);
-        addItem(towerItem);
+
+        bool addTower = true;
+
+        qreal rangeDiameter = 2 * 150;
+
+        if(!(list_of_tower.empty())){
+            for(Tower* t : list_of_tower){
+                qDebug() << "TowerList x : " << t->getPosition().x();
+                qDebug() << "NewTower x : " << position.x();
+                qDebug() << "TowerList y : " << t->getPosition().y();
+                qDebug() << "NewTower y : " << position.y();
+                qreal distance = ::sqrt(::pow(position.x()- t->getPosition().x() ,2) + ::pow(position.y() - t->getPosition().y(),2));
+                if(distance <= rangeDiameter){
+                    addTower = false;
+                    qDebug() << "Click Refusé";
+                }
+            }
+        }
+        if(addTower == true || list_of_tower.empty()){
+            QGraphicsPixmapItem* towerItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath()+"/../Image/tour.png"));
+            towerItem->setPos(position);
+            addItem(towerItem);
+
+            Tower* newTower = new Tower();
+            newTower->setPosition(position);
+
+            //Calcul des coordonnées pour centrer la portée autour de la tour
+            qreal rangeX = position.x() - newTower->getRange() + towerItem->boundingRect().width() / 2;
+            qreal rangeY = position.y() - newTower->getRange() + towerItem->boundingRect().height() / 2;
+
+            //Affichage de la range de la tour
+            QGraphicsEllipseItem* rangeItem = new QGraphicsEllipseItem(QRectF(rangeX, rangeY, rangeDiameter, rangeDiameter));
+            rangeItem->setPen(QPen(Qt::black, 1, Qt::SolidLine));
+            addItem(rangeItem);
+
+            // Ajout de la tour dans la liste des tours
+            list_of_tower.push_back(newTower);
+            qDebug() << "Tour ajouté";
+        }
     }
 }
 
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent* event) {
-    qDebug() << "Click éffectué" << event->scenePos();
+    static int time = 1;
     QGraphicsScene::mousePressEvent(event);
     QPointF sizeTower(28.0,86.0);
     QPointF clickPos = event->scenePos() - sizeTower;
     addTower(clickPos.toPoint());
+    qDebug() << "Click détecté" << time;
+    time++;
 }
 
 void MyScene::addGobelinGauche(){
-    QGraphicsPixmapItem* gobItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath() + "/../Image/marche_bas_1_enorme.png"));
+    Enemy* gobItem = new Enemy();
     list_of_enemy.push_back(gobItem);   //ajoute gobelin au vector enemies
 
     int gob_largeur = 60;
@@ -101,7 +139,7 @@ void MyScene::addGobelinGauche(){
 }
 
 void MyScene::addGobelinHaut(){
-    QGraphicsPixmapItem* gobItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath() + "/../Image/marche_bas_1_enorme.png"));
+    Enemy* gobItem = new Enemy();
     list_of_enemy.push_back(gobItem); // Ajouter le gobelin au vecteur des ennemis
 
     int gob_largeur = 60;
@@ -159,7 +197,7 @@ void MyScene::addGobelinHaut(){
 }
 
 void MyScene::addGobelinBas(){
-    QGraphicsPixmapItem* gobItem = new QGraphicsPixmapItem(QPixmap(QDir::currentPath() + "/../Image/marche_bas_1_enorme.png"));
+    Enemy* gobItem = new Enemy();
     list_of_enemy.push_back(gobItem); // Ajouter le gobelin au vecteur des ennemis
 
     int gob_largeur = 60;
