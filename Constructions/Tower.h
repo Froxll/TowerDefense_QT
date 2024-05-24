@@ -3,21 +3,24 @@
 
 #include <QString>
 #include <QDir>
+#include <QPoint>
 
 class Tower {
     private:
-        QString imagePath;
+        QPoint position;
         int level;
         int damage;
         int range;
     public:
         Tower();
+        QPoint getPosition();
         int getLevel();
         int getDamage();
         int getRange();
         void addLevel();
         void addDamage(int x);
-        QString getImagePath() const;
+        void setPosition(QPoint &pos);
+
 };
 
 #endif //PROJETQT_TOWER_H
