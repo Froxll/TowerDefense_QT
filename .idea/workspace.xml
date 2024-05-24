@@ -20,50 +20,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d215f613-5240-4b99-a176-2d5a775ae0c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProjetQT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Character/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Character/Enemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Constructions/Tower.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Constructions/Tower.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Constructions/Tower.h" beforeDir="false" afterPath="$PROJECT_DIR$/Constructions/Tower.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MyScene.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyScene.h" beforeDir="false" afterPath="$PROJECT_DIR$/MyScene.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-cfce1012e5436502b960.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-05-12T09-56-20-0918.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-ProjetQT-Debug-57798839bfc499fa58af.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Character/Enemy.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Constructions/Tower.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MainWindow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MainWindow.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MainWindow.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MainWindow.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MyScene.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MyScene.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MyScene.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MyScene.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MyView.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/MyView.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/ProjetQT_autogen/mocs_compilation.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/Tools/Banner.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT.dir/main.cpp.o.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetQT_autogen.dir/ParseCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetQT" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetQT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MainWindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MainWindow.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MainWindow.cpp.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MyScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MyScene.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MyScene.cpp.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/EWIEGA46WW/moc_MyScene.cpp.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/moc_Banner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetQT_autogen/WKHKOO7AB7/moc_Banner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="d215f613-5240-4b99-a176-2d5a775ae0c6" name="Changes" comment="commit d'enculé 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +32,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -125,8 +83,16 @@
       <workItem from="1716292037308" duration="2035000" />
       <workItem from="1716473266196" duration="7834000" />
       <workItem from="1716485005661" duration="5165000" />
-      <workItem from="1716550462669" duration="6570000" />
+      <workItem from="1716550462669" duration="6923000" />
     </task>
+    <task id="LOCAL-00001" summary="commit d'enculé 2">
+      <created>1716563182596</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716563182596</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit d'enculé 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit d'enculé 2" />
   </component>
 </project>
