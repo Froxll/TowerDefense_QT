@@ -3,8 +3,7 @@
 Tower::Tower(){
     level = 1;
     damage = 60;
-    range = 30;
-    imagePath = QDir::currentPath()+"/../Image/tour.png";
+    range = 150;
 }
 
 int Tower::getLevel() {
@@ -19,6 +18,10 @@ int Tower::getRange() {
     return range;
 }
 
+QPoint Tower::getPosition() {
+    return position;
+}
+
 void Tower::addDamage(int x) {
     damage = damage + x;
 }
@@ -27,6 +30,6 @@ void Tower::addLevel() {
     level++;
 }
 
-QString Tower::getImagePath() const {
-    return imagePath;
+void Tower::setPosition(QPoint &pos) {
+    position = pos;
 }

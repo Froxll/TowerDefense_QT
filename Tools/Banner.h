@@ -12,20 +12,28 @@
 class Banner : public QWidget{
     Q_OBJECT
     private slots:
+        void startTimer();
         void updateTimer();
     private:
         Button* button;
-        Player* player;
+        Button* button2;
         QLabel* coinLabel;
         QLabel* timerLabel;
         QTimer* timer;
-        int time;
+        int time = 0;
     public:
         Banner(QWidget* parent = 0);
         ~Banner(){
             delete button;
+            delete button2;
             delete coinLabel;
             delete timerLabel;
+        }
+        Button* getButon(){
+            return button;
+        }
+        Button* getButon2(){
+            return button2;
         }
 };
 
