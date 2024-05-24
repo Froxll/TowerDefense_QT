@@ -14,7 +14,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     connect(banner->getButon()->getButton(), &QPushButton::clicked, [this]{
         this->close();
         });
-    connect(banner->getButon2()->getButton(), &QPushButton::clicked, [this] { mainScene->launchWave(1);});
+    connect(banner->getButon2()->getButton(), &QPushButton::clicked, [this] {
+        mainScene->launchWave(1);
+        mainScene->isPressed();
+        });
 
     QWidget* centralWidget = new QWidget(this);
     QVBoxLayout* layout = new QVBoxLayout(centralWidget);
