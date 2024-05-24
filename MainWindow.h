@@ -32,6 +32,7 @@ class MainWindow : public QMainWindow {
     public:
         MainWindow(QWidget* parent = nullptr);
         virtual ~MainWindow();
+        void updateCoinLabel(int newCoin);
     public slots:
         void slot_aboutMenu();
 };

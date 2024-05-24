@@ -3,11 +3,44 @@
 MyScene::MyScene(const QSize& size, QObject* parent) : QGraphicsScene(parent) {
     //Intialisation du timer
     timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(update()));
+    connect(timer, SIGNAL(timeout()), this,SLOT(update()));
     timer->start(30);
     imagePath = QDir::currentPath()+"/../Image/TowerDefenseMap.png";
     background.load(imagePath);
     setSceneRect(0, 0, background.width(), background.height());
+    player = new Player();
+}
+
+void MyScene::EnemyTouch(Enemy* e){
+    static int call = 0;
+    if(call % 2 == 0){
+        for(Tower* t : list_of_tower) {
+            qreal distance = ::sqrt(::pow(e->x() - t->x(), 2) + ::pow(e->y() - t->y(), 2));
+            if(e->getHP() < 0){
+                t->setTarget(0);
+            }
+            if (distance <= 150 and t->getTarget() < 1 and e->getDead() == false) {
+                qDebug() << "HP de base : " << e->getHP();
+                t->setTarget(1);
+                qDebug() << "Enemy touché";
+                e->addHP(t->getDamage());
+                qDebug() << "HP après être touché : " << e->getHP();
+                if (e->getHP() <= 0) {
+                    qDebug() << "mort";
+                    e->setDead();
+                    auto it = std::remove(list_of_enemy.begin(), list_of_enemy.end(), e);
+                    list_of_enemy.erase(it, list_of_enemy.end());
+                    removeItem(e);
+                    player->addCoin(2);
+                    coinChanged(player->getCoin());
+                }
+            }
+            else{
+                t->setTarget(0);
+            }
+        }
+    }
+    call++;
 }
 
 MyScene::~MyScene() {
@@ -28,51 +61,59 @@ void MyScene::isPressed() {
 }
 
 void MyScene::addTower(QPoint position) {
-    if((position.y() > 100 && position.y() < 200 && position.x() > 0 && position.x() < 800)
-    ||(position.y() > 300 && position.y() < 400 && position.x() > 0 && position.x() < 700)
-    ||(position.y() > 300 && position.y() < 600 && position.x() > 600 && position.x() < 700)
-    ||(position.y() > 500 && position.y() < 1010 && position.x() > 500 && position.x() < 600)
-    ||(position.y() > -50 && position.y() < 600 && position.x() > 800 && position.x() < 900)
-    ||(position.y() > 500 && position.y() < 600 && position.x() > 900 && position.x() < 1400)
-    ||(position.y() > 800 && position.y() < 1010 && position.x() > 700 && position.x() < 800)
-    ||(position.y() > 700 && position.y() < 800 && position.x() > 800 && position.x() < 2000)
-    ||(position.y() > -50 && position.y() < 500 && position.x() > 1000 && position.x() < 100)
-    ||(position.y() > 300 && position.y() < 400 && position.x() > 1100 && position.x() < 1500)
-    ||(position.y() > 400 && position.y() < 700 && position.x() > 1500 && position.x() < 1600)
-    ||(position.y() > 500 && position.y() < 600 && position.x() > 1600 && position.x() < 2000)){
+    qDebug() << player->getCoin();
+    if(player->getCoin() >= 50){
+        player->substractCoin(50);
+        coinChanged(player->getCoin());
+        if((position.y() > 100 && position.y() < 200 && position.x() > 0 && position.x() < 800)
+           ||(position.y() > 300 && position.y() < 400 && position.x() > 0 && position.x() < 700)
+           ||(position.y() > 300 && position.y() < 600 && position.x() > 600 && position.x() < 700)
+           ||(position.y() > 500 && position.y() < 1010 && position.x() > 500 && position.x() < 600)
+           ||(position.y() > -50 && position.y() < 600 && position.x() > 800 && position.x() < 900)
+           ||(position.y() > 500 && position.y() < 600 && position.x() > 900 && position.x() < 1400)
+           ||(position.y() > 800 && position.y() < 1010 && position.x() > 700 && position.x() < 800)
+           ||(position.y() > 700 && position.y() < 800 && position.x() > 800 && position.x() < 2000)
+           ||(position.y() > -50 && position.y() < 500 && position.x() > 1000 && position.x() < 100)
+           ||(position.y() > 300 && position.y() < 400 && position.x() > 1100 && position.x() < 1500)
+           ||(position.y() > 400 && position.y() < 700 && position.x() > 1500 && position.x() < 1600)
+           ||(position.y() > 500 && position.y() < 600 && position.x() > 1600 && position.x() < 2000)){
 
-        bool addTower = true;
+            bool addTower = true;
 
-        qreal rangeDiameter = 2 * 150;
+            qreal rangeDiameter = 2 * 150;
 
-        if(!(list_of_tower.empty())){
-            for(Tower* t : list_of_tower){
-                qreal distance = ::sqrt(::pow(position.x()- t->x() ,2) + ::pow(position.y() - t->y(),2));
-                if(distance <= 150){
-                    addTower = false;
-                    qDebug() << "Click Refusé";
+            if(!(list_of_tower.empty())){
+                for(Tower* t : list_of_tower){
+                    qreal distance = ::sqrt(::pow(position.x()- t->x() ,2) + ::pow(position.y() - t->y(),2));
+                    if(distance <= 150){
+                        addTower = false;
+                        qDebug() << "Click Refusé";
+                    }
                 }
             }
+            if(addTower == true || list_of_tower.empty()){
+                Tower* newTower = new Tower();
+                newTower->moveBy(position.x(), position.y());
+
+                addItem(newTower);
+
+                //Calcul des coordonnées pour centrer la portée autour de la tour
+                qreal rangeX = position.x() - newTower->getRange() + newTower->boundingRect().width() / 2;
+                qreal rangeY = position.y() - newTower->getRange() + newTower->boundingRect().height() / 2;
+
+                //Affichage de la range de la tour
+                QGraphicsEllipseItem* rangeItem = new QGraphicsEllipseItem(QRectF(rangeX, rangeY, rangeDiameter, rangeDiameter));
+                rangeItem->setPen(QPen(Qt::black, 1, Qt::SolidLine));
+                addItem(rangeItem);
+
+                // Ajout de la tour dans la liste des tours
+                list_of_tower.push_back(newTower);
+                qDebug() << "Tour ajouté";
+            }
         }
-        if(addTower == true || list_of_tower.empty()){
-            Tower* newTower = new Tower();
-            newTower->moveBy(position.x(), position.y());
-
-            addItem(newTower);
-
-            //Calcul des coordonnées pour centrer la portée autour de la tour
-            qreal rangeX = position.x() - newTower->getRange() + newTower->boundingRect().width() / 2;
-            qreal rangeY = position.y() - newTower->getRange() + newTower->boundingRect().height() / 2;
-
-            //Affichage de la range de la tour
-            QGraphicsEllipseItem* rangeItem = new QGraphicsEllipseItem(QRectF(rangeX, rangeY, rangeDiameter, rangeDiameter));
-            rangeItem->setPen(QPen(Qt::black, 1, Qt::SolidLine));
-            addItem(rangeItem);
-
-            // Ajout de la tour dans la liste des tours
-            list_of_tower.push_back(newTower);
-            qDebug() << "Tour ajouté";
-        }
+    }
+    else{
+        qDebug() << "Pas assez de sous";
     }
 }
 
@@ -104,18 +145,21 @@ void MyScene::addGobelinGauche(){
     QTimer* timer1 = new QTimer(this);
     connect(timer1, &QTimer::timeout, [this, gobItem, gob_largeur, gob_hauteur, timer1]() {
         gobItem->moveBy(10, 0);
+        EnemyTouch(gobItem);
         if (gobItem->pos().x() > (width() * 0.375 - gob_largeur)) {
             timer1->stop();
 
             QTimer* timer2 = new QTimer(this);
             connect(timer2, &QTimer::timeout, [this, gobItem, gob_hauteur, timer2]() {
                 gobItem->moveBy(0, 10);
+                EnemyTouch(gobItem);
                 if (gobItem->pos().y() > (height() * 0.681) - gob_hauteur) {
                     timer2->stop();
 
                     QTimer* timer3 = new QTimer(this);
                     connect(timer3, &QTimer::timeout, [this, gobItem, timer3]() {
                         gobItem->moveBy(10, 0);
+                        EnemyTouch(gobItem);
                         if (gobItem->pos().x() > width()) {
                             timer3->stop();
 
@@ -154,24 +198,28 @@ void MyScene::addGobelinHaut(){
     QTimer* timer1 = new QTimer(this);
     connect(timer1, &QTimer::timeout, [this, gobItem, gob_largeur, gob_hauteur, timer1]() {
         gobItem->moveBy(0, 10);
+        EnemyTouch(gobItem);
         if (gobItem->pos().y() > (height() * 0.5) - gob_hauteur) {
             timer1->stop();
 
             QTimer* timer2 = new QTimer(this);
             connect(timer2, &QTimer::timeout, [this, gobItem, gob_largeur, gob_hauteur, timer2]() {
                 gobItem->moveBy(10, 0);
+                EnemyTouch(gobItem);
                 if (gobItem->pos().x() > (width() * 0.725) - gob_largeur / 2) {
                     timer2->stop();
 
                     QTimer* timer3 = new QTimer(this);
                     connect(timer3, &QTimer::timeout, [this, gobItem, gob_hauteur, timer3]() {
                         gobItem->moveBy(0, 10);
+                        EnemyTouch(gobItem);
                         if (gobItem->pos().y() > (height() * 0.681) - gob_hauteur) {
                             timer3->stop();
 
                             QTimer* timer4 = new QTimer(this);
                             connect(timer4, &QTimer::timeout, [this, gobItem, timer4]() {
                                 gobItem->moveBy(10, 0);
+                                EnemyTouch(gobItem);
                                 if (gobItem->pos().x() > width()) {
                                     timer4->stop();
 
@@ -215,12 +263,14 @@ void MyScene::addGobelinBas(){
     QTimer* timer1 = new QTimer(this);
     connect(timer1, &QTimer::timeout, [this, gobItem, gob_hauteur, timer1]() {
         gobItem->moveBy(0, -10);
+        EnemyTouch(gobItem);
         if (gobItem->pos().y() < (height() * 0.68) - gob_hauteur) {
             timer1->stop();
 
             QTimer* timer2 = new QTimer(this);
             connect(timer2, &QTimer::timeout, [this, gobItem, timer2]() {
                 gobItem->moveBy(10, 0);
+                EnemyTouch(gobItem);
                 if (gobItem->pos().x() > width()) {
                     timer2->stop();
 
@@ -283,4 +333,8 @@ void MyScene::processEnemyQueue(int waveNumber) {
             //printEnemies(list_of_enemy);
         });
     }
+}
+
+void MyScene::coinChanged(int newCoin) {
+    emit coinValueChanged(newCoin);
 }

@@ -18,11 +18,14 @@
 #include <QMouseEvent>
 #include <QGraphicsSceneMouseEvent>
 #include "Character/Enemy.h"
+#include "Character/Player.h"
 
 using namespace std;
 
 class MyScene : public QGraphicsScene {
     Q_OBJECT
+    signals:
+        void coinValueChanged(int newCoin);
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
         void addTower(QPoint position);
@@ -35,17 +38,23 @@ class MyScene : public QGraphicsScene {
         QPixmap mapBackground;
         QString imagePath;
         QPixmap background;
+        Player* player;
         deque<function<void()>> enemy_queue;
         vector<Tower*> list_of_tower;
         vector<Enemy*> list_of_enemy;
         bool bouttonPressed = false;
         void addEnemies(int waveNumber,int nb_ennemy);
         void processEnemyQueue(int waveNumber);
+        void EnemyTouch(Enemy* e);
     public:
         MyScene(const QSize& size, QObject* parent = nullptr);
         virtual ~MyScene();
-        void launchWave(int waveNumber);
         void isPressed();
+        void launchWave(int waveNumber);
+        void coinChanged(int newCoin);
+        Player* getPlayer(){
+            return player;
+        }
 };
 
 

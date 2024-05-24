@@ -11,13 +11,17 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     mainView = new MyView(this);
     mainView->setScene(mainScene);
 
+    banner->getCoinLabel()->setText("Coins : " + QString::number(mainScene->getPlayer()->getCoin()));
+
+    connect(mainScene, &MyScene::coinValueChanged,this,&MainWindow::updateCoinLabel);
+
     connect(banner->getButon()->getButton(), &QPushButton::clicked, [this]{
         this->close();
         });
     connect(banner->getButon2()->getButton(), &QPushButton::clicked, [this] {
         mainScene->launchWave(1);
         mainScene->isPressed();
-        });
+    });
 
     QWidget* centralWidget = new QWidget(this);
     QVBoxLayout* layout = new QVBoxLayout(centralWidget);
@@ -32,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     helpMenu->addAction(actionHelp);
 
 
-    QTimer::singleShot(5, this, [=]() {
+    QTimer::singleShot(100, this, [=]() {
         QKeyEvent *event = new QKeyEvent(QEvent::KeyPress, Qt::Key_E, Qt::NoModifier);
         QApplication::postEvent(this, event);
     });
@@ -61,4 +65,8 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
         default:
             QMainWindow::keyPressEvent(event);
     }
+}
+
+void MainWindow::updateCoinLabel(int newCoin) {
+    banner->getCoinLabel()->setText("Coins : "+ QString::number(newCoin));
 }

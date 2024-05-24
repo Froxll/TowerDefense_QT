@@ -30,18 +30,13 @@ void Enemy::addLevel() {
 }
 
 void Enemy::addHP(int x) {
-    hp = hp + x;
+    hp = hp - x;
 }
 
-Enemy::Enemy(QPixmap Gob, float newHp, float newDmg, int newGold, int newLvl){
-    this->img = Gob;
-    this->hp = newHp;
-    this->damage = newDmg;
-    this->level = newLvl;
-    this->gold = newGold;
-    setPixmap(img);
+void Enemy::setDead() {
+    dead = true;
 }
 
-Enemy::~Enemy(){
-
+bool Enemy::getDead() {
+    return dead;
 }

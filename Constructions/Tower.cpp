@@ -31,3 +31,11 @@ void Tower::addLevel() {
 QPixmap Tower::getItem(){
     return towerItem;
 }
+
+int Tower::getTarget() {
+    return target;
+}
+
+void Tower::setTarget(int i) {
+    target = i;
+}

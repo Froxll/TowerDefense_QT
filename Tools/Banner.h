@@ -35,6 +35,9 @@ class Banner : public QWidget{
         Button* getButon2(){
             return button2;
         }
+        QLabel* getCoinLabel(){
+            return coinLabel;
+        }
 };
 
 #endif //PROJETQT_BANNER_H
