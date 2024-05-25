@@ -11,14 +11,17 @@
 
 class Banner : public QWidget{
     Q_OBJECT
-    private slots:
+    public slots:
         void startTimer();
         void updateTimer();
+        void stopTimer();
+        void renameButton2(const QString& newName);
     private:
         Button* button;
         Button* button2;
         QLabel* coinLabel;
         QLabel* timerLabel;
+        QLabel* hpLabel;
         QTimer* timer;
         int time = 0;
     public:
@@ -28,6 +31,8 @@ class Banner : public QWidget{
             delete button2;
             delete coinLabel;
             delete timerLabel;
+            delete hpLabel;
+            delete timer;
         }
         Button* getButon(){
             return button;
@@ -37,6 +42,12 @@ class Banner : public QWidget{
         }
         QLabel* getCoinLabel(){
             return coinLabel;
+        }
+        QLabel* getHPLabel(){
+            return hpLabel;
+        }
+        void setTime(int i){
+            time = i;
         }
 };
 

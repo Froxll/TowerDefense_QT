@@ -25,7 +25,6 @@ class MainWindow : public QMainWindow {
         void keyPressEvent(QKeyEvent* event) override;
     private :
         Banner* banner;
-        Player* player;
         MyScene* mainScene;
         MyView* mainView;
         QMenu* helpMenu;
@@ -33,6 +32,7 @@ class MainWindow : public QMainWindow {
         MainWindow(QWidget* parent = nullptr);
         virtual ~MainWindow();
         void updateCoinLabel(int newCoin);
+        void updateHPLabel(int newHP);
     public slots:
         void slot_aboutMenu();
 };

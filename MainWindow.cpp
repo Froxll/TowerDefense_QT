@@ -6,21 +6,45 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent){
     QSize mainWindowSize = QSize(900,600);
 
     banner = new Banner(this);
-    player = new Player();
     mainScene = new MyScene(mainWindowSize,this);
     mainView = new MyView(this);
     mainView->setScene(mainScene);
 
     banner->getCoinLabel()->setText("Coins : " + QString::number(mainScene->getPlayer()->getCoin()));
-
+    banner->getHPLabel()->setText("HP : " + QString::number(mainScene->getPlayer()->getHP()));
     connect(mainScene, &MyScene::coinValueChanged,this,&MainWindow::updateCoinLabel);
+    connect(mainScene, &MyScene::hpValueChanged,this,&MainWindow::updateHPLabel);
+
+    connect(mainScene, &MyScene::GameEnd,banner,&Banner::stopTimer);
+    connect(mainScene, &MyScene::GameEnd,[this]{
+        banner->renameButton2("REJOUER");
+        banner->setTime(0);
+        });
 
     connect(banner->getButon()->getButton(), &QPushButton::clicked, [this]{
         this->close();
         });
     connect(banner->getButon2()->getButton(), &QPushButton::clicked, [this] {
-        mainScene->launchWave(1);
-        mainScene->isPressed();
+        auto& enemyList = mainScene->getEnemy();
+        if(enemyList.empty()){
+            banner->renameButton2("JOUER");
+            auto& towerList = mainScene->getTower();
+            if(!towerList.empty()){
+                for(Tower* t : towerList){
+                    mainScene->removeItem(t);
+                    mainScene->removeItem(t->getRangeItem());
+                }
+                mainScene->getTower().clear();
+                qDebug() << mainScene->getTower().size();
+            }
+            mainScene->getPlayer()->setHP();
+            mainScene->getPlayer()->setCoin();
+            emit mainScene->hpValueChanged(mainScene->getPlayer()->getHP());
+            emit mainScene->coinValueChanged(mainScene->getPlayer()->getCoin());
+            mainScene->gameEnd(false);
+            mainScene->launchWave(1);
+            mainScene->isPressed();
+        }
     });
 
     QWidget* centralWidget = new QWidget(this);
@@ -69,4 +93,8 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
 
 void MainWindow::updateCoinLabel(int newCoin) {
     banner->getCoinLabel()->setText("Coins : "+ QString::number(newCoin));
+}
+
+void MainWindow::updateHPLabel(int newHP) {
+    banner->getHPLabel()->setText("HP : " + QString::number(newHP));
 }

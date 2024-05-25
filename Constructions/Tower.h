@@ -9,6 +9,7 @@
 
 class Tower :  public QGraphicsPixmapItem, public QObject{
     private:
+        QGraphicsEllipseItem* rangeItem;
         QPixmap towerItem;
         int target = 0;
         int level;
@@ -24,6 +25,12 @@ class Tower :  public QGraphicsPixmapItem, public QObject{
         void setTarget(int i);
         void addLevel();
         void addDamage(int x);
+        void setRangeItem(QGraphicsEllipseItem* rangeItem){
+            this->rangeItem = rangeItem;
+        }
+        QGraphicsEllipseItem* getRangeItem(){
+            return rangeItem;
+        }
 };
 
 #endif //PROJETQT_TOWER_H

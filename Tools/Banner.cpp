@@ -2,6 +2,7 @@
 
 Banner::Banner(QWidget *parent) {
     coinLabel = new QLabel("0", this);
+    hpLabel = new QLabel("0", this);
     timerLabel = new QLabel("0", this);
     timer = new QTimer(this);
     button2 = new Button("JOUER",this);
@@ -15,9 +16,8 @@ Banner::Banner(QWidget *parent) {
     QWidget* containerWidget = new QWidget(this);
     QHBoxLayout* mainLayout = new QHBoxLayout(containerWidget);
 
-    coinLabel->setText("Coins : ");
-
     mainLayout->addWidget(coinLabel);
+    mainLayout->addWidget(hpLabel);
     mainLayout->addWidget(timerLabel);
     mainLayout->addWidget(button2);
     mainLayout->addWidget(button);
@@ -38,4 +38,12 @@ void Banner::updateTimer() {
 
 void Banner::startTimer() {
     timer->start(1000);
+}
+
+void Banner::stopTimer() {
+    timer->stop();
+}
+
+void Banner::renameButton2(const QString& newName) {
+    button2->getButton()->setText(newName);
 }

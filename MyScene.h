@@ -25,7 +25,9 @@ using namespace std;
 class MyScene : public QGraphicsScene {
     Q_OBJECT
     signals:
+        void GameEnd();
         void coinValueChanged(int newCoin);
+        void hpValueChanged(int newHP);
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
         void addTower(QPoint position);
@@ -42,6 +44,7 @@ class MyScene : public QGraphicsScene {
         deque<function<void()>> enemy_queue;
         vector<Tower*> list_of_tower;
         vector<Enemy*> list_of_enemy;
+        bool endGame = false;
         bool bouttonPressed = false;
         void addEnemies(int waveNumber,int nb_ennemy);
         void processEnemyQueue(int waveNumber);
@@ -50,10 +53,21 @@ class MyScene : public QGraphicsScene {
         MyScene(const QSize& size, QObject* parent = nullptr);
         virtual ~MyScene();
         void isPressed();
+        void gameEnd(bool a){
+            endGame = a;
+        }
+        bool getEndGame(){
+            return endGame;
+        }
         void launchWave(int waveNumber);
-        void coinChanged(int newCoin);
         Player* getPlayer(){
             return player;
+        }
+        vector<Tower*>& getTower(){
+            return list_of_tower;
+        }
+        vector<Enemy*>& getEnemy(){
+            return list_of_enemy;
         }
 };
 
